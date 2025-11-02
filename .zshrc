@@ -119,6 +119,9 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Show venv in prompt
+export PS1="(\$(basename \$VIRTUAL_ENV)) $PS1"
+
 # history setup
 HISTFILE=$HOME/.zhistory
 SAVEHIST=1000
