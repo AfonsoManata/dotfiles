@@ -1,0 +1,206 @@
+after-startup-command = ['exec-and-forget sketchybar']
+
+# Notify Sketchybar about workspace change
+exec-on-workspace-change = ['/bin/bash', '-c',
+  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
+  'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
+]
+
+# Start AeroSpace at login
+start-at-login = false
+
+# Normalizations. See: https://nikictrlobko.github.io/AeroSpace/guide#normalization
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+# See: https://nikictrlobko.github.io/AeroSpace/guide#layouts
+# The 'accordion-padding' specifies the size of accordion padding
+# You can set 0 to disable the padding feature
+accordion-padding = 300
+
+# Possible values: tiles|accordion
+default-root-container-layout = 'tiles'
+
+# Possible values: horizontal|vertical|auto
+# 'auto' means: wide monitor (anything wider than high) gets horizontal orientation,
+#               tall monitor (anything higher than wide) gets vertical orientation
+default-root-container-orientation = 'auto'
+
+# Mouse follows focus when focused monitor changes
+# Drop it from your config, if you don't like this behavior
+# See https://nikictrlobko.github.io/AeroSpace/guide#on-focus-changed-callbacks
+# See https://nikictrlobko.github.io/AeroSpace/commands#move-mouse
+# Fallback value (if you omit the key): on-focused-monitor-changed = []
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
+# You can effectively turn off macOS "Hide application" (cmd-h) feature by toggling this flag
+# Useful if you don't use this macOS feature, but accidentally hit cmd-h or cmd-ctrl-h key
+# Also see: https://nikictrlobko.github.io/AeroSpace/goodness#disable-hide-app
+automatically-unhide-macos-hidden-apps = false
+
+# [[on-window-detected]]
+# if.app-id = 'com.apple.systempreferences'
+# if.app-name-regex-substring = 'settings'
+# if.window-title-regex-substring = 'substring'
+# if.workspace = 'workspace-name'
+# if.during-aerospace-startup = true
+# check-further-callbacks = true
+# run = ['layout floating', 'move-node-to-workspace S']  # The callback itself
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'telegram'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'finder'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'safari'
+run = 'layout floating'
+ 
+[[on-window-detected]]
+if.app-name-regex-substring = 'camera'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'elgato'
+run = 'layout floating'
+
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'mail'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'trello'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'quicktime'
+run = 'layout floating'
+
+# Possible values: (qwerty|dvorak)
+# See https://nikictrlobko.github.io/AeroSpace/guide#key-mapping
+[key-mapping]
+preset = 'qwerty'
+
+# Gaps between windows (inner-*) and between monitor edges (outer-*).
+# Possible values:
+# - Constant:     gaps.outer.top = 8
+# - Per monitor:  gaps.outer.top = [{ monitor.main = 16 }, { monitor."some-pattern" = 32 }, 24]
+#                 In this example, 24 is a default value when there is no match.
+#                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
+#                 See: https://nikictrlobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
+[gaps]
+inner.horizontal = 10
+inner.vertical =   10
+outer.left =       0
+outer.bottom =     0
+outer.right =      0
+outer.top = [
+    { monitor."LG FULL HD"= 25 },   # for external monitor — no gap
+	0
+]
+
+# 'main' binding mode declaration
+# See: https://nikictrlobko.github.io/AeroSpace/guide#binding-modes
+# 'main' binding mode must be always presented
+# Fallback value (if you omit the key): mode.main.binding = {}
+[mode.main.binding]
+
+# All possible keys:
+# - Letters.        a, b, c, ..., z
+# - Numbers.        0, 1, 2, ..., 9
+# - Keypad numbers. keypad0, keypad1, keypad2, ..., keypad9
+# - F-keys.         f1, f2, ..., f20
+# - Special keys.   minus, equal, period, comma, slash, backslash, quote, semicolon, backtick,
+#                   leftSquareBracket, rightSquareBracket, space, enter, esc, backspace, ctrl
+# - Keypad special. keypadClear, keypadDecimalMark, keypadDivide, keypadEnter, keypadEqual,
+#                   keypadMinus, keypadMultiply, keypadPlus
+# - Arrows.         left, down, up, right
+
+# All possible modifiers: cmd, ctrl, ctrl, shift
+
+# All possible commands: https://nikictrlobko.github.io/AeroSpace/commands
+
+# See: https://nikictrlobko.github.io/AeroSpace/commands#exec-and-forget
+# You can uncomment the following lines to open up terminal with ctrl + enter shortcut (like in i3)
+# ctrl-enter = '''exec-and-forget osascript -e '
+# tell application "Terminal"
+#     do script
+#     activate
+# end tell'ctrl
+# '''
+
+ctrl-shift-f = 'fullscreen'
+
+ctrl-shift-left = 'join-with left'
+ctrl-shift-down = 'join-with down'
+ctrl-shift-up = 'join-with up'
+ctrl-shift-right = 'join-with right'
+
+# See: https://nikictrlobko.github.io/AeroSpace/commands#layout
+ctrl-up = 'layout tiles horizontal vertical'
+ctrl-down = 'layout accordion horizontal vertical'
+
+# See: https://nikictrlobko.github.io/AeroSpace/commands#focus
+ctrl-h = 'focus left'
+ctrl-j = 'focus down'
+ctrl-k = 'focus up'
+ctrl-l = 'focus right'
+
+# See: https://nikictrlobko.github.io/AeroSpace/commands#move
+ctrl-shift-h = 'move left'
+ctrl-shift-j = 'move down'
+ctrl-shift-k = 'move up'
+ctrl-shift-l = 'move right'
+
+# See: https://nikictrlobko.github.io/AeroSpace/commands#resize
+ctrl-minus = 'resize smart -50'
+ctrl-equal = 'resize smart +50'
+
+# See: https://nikictrlobko.github.io/AeroSpace/commands#workspace
+ctrl-1 = 'workspace 1'
+ctrl-2 = 'workspace 2'
+ctrl-3 = 'workspace 3'
+ctrl-q = 'workspace 4'
+ctrl-w = 'workspace 5'
+ctrl-e = 'workspace 6'
+ctrl-i = 'workspace 7'
+
+
+# See: https://nikictrlobko.github.io/AeroSpace/commands#move-node-to-workspace
+ctrl-shift-1 = 'move-node-to-workspace 1 --focus-follows-window'
+ctrl-shift-2 = 'move-node-to-workspace 2 --focus-follows-window'
+ctrl-shift-3 = 'move-node-to-workspace 3 --focus-follows-window'
+ctrl-shift-q = 'move-node-to-workspace 4 --focus-follows-window'
+ctrl-shift-w = 'move-node-to-workspace 5 --focus-follows-window'
+ctrl-shift-e = 'move-node-to-workspace 6 --focus-follows-window'
+ctrl-shift-i = 'move-node-to-workspace 7 --focus-follows-window'
+
+ctrl-tab = 'workspace next --wrap-around'
+ctrl-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+
+# See: https://nikictrlobko.github.io/AeroSpace/commands#mode
+ctrl-shift-semicolon = 'mode service'
+ctrl-shift-enter = 'mode apps'
+
+ctrl-d = 'exec-and-forget open -a /Applications/Discord.app'
+ctrl-s = 'exec-and-forget open -a /Applications/Spotify.app'
+ctrl-b = 'exec-and-forget open -a /Applications/Brave Browser.app'
+ctrl-a = 'exec-and-forget open -a /Applications/Alacritty.app'
+ctrl-n = 'exec-and-forget open -a /Applications/Notion.app'
+ctrl-p = 'exec-and-forget open -a /Applications/KeePassXC.app'
+
+# 'service' binding mode declaration.
+# See: https://nikictrlobko.github.io/AeroSpace/guide#binding-modes
+[mode.service.binding]
+esc = ['reload-config', 'mode main']
+r = ['flatten-workspace-tree', 'mode main'] # reset layout
+f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+backspace = ['close-all-windows-but-current', 'mode main']
+
+[mode.apps.binding]
+ctrl-w = ['exec-and-forget open -a /Applications/WezTerm.app', 'mode main']
+
