@@ -20,7 +20,6 @@ alias c="clear"
 alias f="fastfetch"
 alias comboio="sl"
 alias ls="eza --icons=always"
-alias cd="z"
 alias python="python3"
 
 # ===================================================================
