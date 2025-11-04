@@ -99,8 +99,7 @@ export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
 _fzf_zoxide_cd_final() {
   local dir
   dir=$(zoxide query -l | fzf --height 40% --layout=reverse )
-  [[ -n "$dir" ]] && cd "$dir" && zle reset-prompt && clear
-	clear
+  [[ -n "$dir" ]] && cd "$dir" && zle accept-line && clear
 }
 
 zle -N _fzf_zoxide_cd_final
