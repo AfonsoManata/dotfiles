@@ -1,21 +1,30 @@
 
-ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
-
-# Download Zinit, if it's not there yet
-if [ ! -d "$ZINIT_HOME" ]; then
-   mkdir -p "$(dirname $ZINIT_HOME)"
-   git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Source/Load zinit
-source "${ZINIT_HOME}/zinit.zsh"
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
-# Add in zsh plugins
-zinit light zsh-users/zsh-syntax-highlighting
-zinit light zsh-users/zsh-completions
-zinit light zsh-users/zsh-autosuggestions
-zinit light Aloxaf/fzf-tab
-zinit light jeffreytse/zsh-vi-mode
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+alias reload-zsh="source ~/.zshrc"
+alias edit-zsh="nvim ~/.zshrc"
+alias n="nvim"
+alias c="clear"
+alias f="fastfetch"
+alias comboio="sl"
+
+# completion using arrow keys (based on history)
+bindkey '^[[A' history-search-backward
+bindkey '^[[B' history-search-forward
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+
+export PATH=$PATH:/Users/joseanmartinez/.spicetify
+
+export PATH="$HOME/.rbenv/shims:$PATH"
 
 # History
 HISTSIZE=10000
@@ -62,20 +71,24 @@ export FZF_DEFAULT_OPTS=" \
 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
 --color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
 
-# auto start tmux
-if [[ -z "$TMUX" ]]; then
-    if tmux list-sessions &> /dev/null; then
-        tmux attach
-    else
-        tmux new-session
-    fi
-fi
 
 
+# ---- FZF -----
+
+# Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
 
+# --- setup fzf theme ---
+fg="#CBE0F0"
+bg="#011628"
+bg_highlight="#143652"
+purple="#B388FF"
+blue="#06BCE4"
+cyan="#2CF9ED"
 
+export FZF_DEFAULT_OPTS="--color=fg:${fg},bg:${bg},hl:${purple},fg+:${fg},bg+:${bg_highlight},hl+:${purple},info:${blue},prompt:${cyan},pointer:${cyan},marker:${cyan},spinner:${cyan},header:${cyan}"
 
+# -- Use fd instead of fzf --
 
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -161,3 +174,13 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
+
+
+# auto start tmux
+if [[ -z "$TMUX" ]]; then
+    if tmux list-sessions &> /dev/null; then
+        tmux attach
+    else
+        tmux new-session
+    fi
+fi
