@@ -99,7 +99,8 @@ outer.left =       0
 outer.bottom =     0
 outer.right =      0
 outer.top = [
-    { monitor."LG FULL HD"= 25 },   # for external monitor — no gap
+    { monitor."LG FULL HD"= 25 },   # for external monitor
+    { monitor."24G1WG4"= 25 },   # for external monitor p
 	0
 ]
 
