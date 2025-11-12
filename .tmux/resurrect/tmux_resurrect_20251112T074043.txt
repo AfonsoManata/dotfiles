@@ -1,0 +1,7 @@
+pane	ist	1	1	:*	1	MacBook-Pro-de-Manata.local	:/Users/afonsomanata	1	zsh	:
+pane	personal	1	1	:*	1	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/Leetcode-Grind/Basics	1	zsh	:
+pane	promptlyWork	1	1	:*	1	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/Promplty/infrastructure-live/stg/eu-central-1/eks/apps/infrastructure/crossplane/application/templates/xcollect	1	Python	:/opt/homebrew/Cellar/python@3.13/3.13.7/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python /opt/homebrew/bin/aws configure sso
+window	ist	1	:zsh	1	:*	bd61,211x54,0,0,4	:
+window	personal	1	:zsh	1	:*	bd63,211x54,0,0,6	:
+window	promptlyWork	1	:Python	1	:*	bd62,211x54,0,0,5	:
+state	promptlyWork	
