@@ -48,6 +48,10 @@ automatically-unhide-macos-hidden-apps = false
 # run = ['layout floating', 'move-node-to-workspace S']  # The callback itself
 
 [[on-window-detected]]
+if.app-name-regex-substring = 'Spotify'
+run = 'layout floating'
+
+[[on-window-detected]]
 if.app-name-regex-substring = 'telegram'
 run = 'layout floating'
 
@@ -191,6 +195,7 @@ ctrl-d = 'exec-and-forget open -a /Applications/Discord.app'
 ctrl-m = 'exec-and-forget open -a /Applications/Spotify.app'
 ctrl-b = 'exec-and-forget open -a /Applications/Brave Browser.app'
 ctrl-a = 'exec-and-forget open -a /Applications/Alacritty.app'
+ctrl-o = 'exec-and-forget /Applications/Alacritty.app/Contents/MacOS/alacritty -e nvim "/Users/afonsomanata/notes/note-$(date +%Y%m%d_%H%M).md"' 
 ctrl-n = 'exec-and-forget open -a /Applications/Notion.app'
 ctrl-p = 'exec-and-forget open -a /Applications/KeePassXC.app'
 

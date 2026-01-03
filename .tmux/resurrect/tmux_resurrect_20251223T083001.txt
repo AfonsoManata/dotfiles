@@ -1,0 +1,12 @@
+pane	grind	1	1	:*	1	:/Users/afonsomanata/Programing/Leetcode-Grind/Dp	1	zsh	2060	:
+pane	ist	1	1	:*	1	:/Users/afonsomanata/IST-MYFILES/ASA/Project/ASA25-26/Projecto2	1	zsh	2096	:
+pane	personal	1	1	:*	1	:/Users/afonsomanata/Programing/PersonalProjects/JustAQuote/backend	:/Users/afonsomanata/Programing/PersonalProjects	1	zsh	:
+pane	personal	1	1	:*	2	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/UniversityGrades	0	zsh	:
+pane	random	1	1	:*	1	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio	1	zsh	:
+pane	random	1	1	:*	2	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio/public/img	0	nvim	:nvim text.txt
+pane	random	1	1	:*	3	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio/components	0	nvim	:nvim experience.tsx
+window	grind	1	:zsh	1	:*	b15e,272x60,0,0,1	:
+window	ist	1	:zsh	1	:*	b15f,272x60,0,0,2	:
+window	personal	1	:zsh	1	:*	ea18,272x60,0,0{136x60,0,0,3,135x60,137,0,4}	:
+window	random	1	:zsh	1	:*	cd94,272x60,0,0{123x60,0,0[123x30,0,0,7,123x29,0,31,8],148x60,124,0,9}	:
+state	ist	grind

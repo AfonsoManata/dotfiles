@@ -1,0 +1,12 @@
+pane	grind	1	1	:*	1	:/Users/afonsomanata	:/Users/afonsomanata/Library/CloudStorage/GoogleDrive-afonso.manata.cruz@gmail.com/My\ Drive/Resumes/Resumes	1	zsh	:
+pane	ist	1	1	:*	1	:/Users/afonsomanata/IST-MYFILES/SO/SOLabs/lab_detecao-erros/src	:/Users/afonsomanata/Programing/PersonalProjects	1	zsh	:
+pane	personal	1	1	:*	1	Yazi: ~/Programing/PersonalProjects/JustAQuote/backend/src/main/java/com/example/justaquote/controllers	:/Users/afonsomanata/Programing/PersonalProjects/JustAQuote/backend/src/main/java/com/example/justaquote/controllers	0	yazi	:yazi --cwd-file=/var/folders/k8/dqck2g6j17nf85c75nbdf__00000gn/T/yazi-cwd.XXXXXX.5lIqcIreBc
+pane	personal	1	1	:*	2	:/Users/afonsomanata/Programing/PersonalProjects/JustAQuote/backend	1	zsh	3495	:
+pane	random	1	1	:*	1	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio	1	zsh	:
+pane	random	1	1	:*	2	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio/public/img	0	nvim	:nvim text.txt
+pane	random	1	1	:*	3	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio/components	0	nvim	:nvim experience.tsx
+window	grind	1	:zsh	1	:*	cb9e,229x66,0,0,1	:
+window	ist	1	:zsh	1	:*	cb9f,229x66,0,0,2	:
+window	personal	1	:zsh	1	:*	337c,229x66,0,0{114x66,0,0,3,114x66,115,0,4}	:
+window	random	1	:zsh	1	:*	c766,229x66,0,0{101x66,0,0[101x33,0,0,5,101x32,0,34,6],127x66,102,0,7}	:
+state	personal	

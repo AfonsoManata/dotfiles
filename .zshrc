@@ -21,6 +21,7 @@ alias f="fastfetch"
 alias comboio="sl"
 alias ls="eza --icons=always"
 alias python="python3"
+alias fireworks="npx firew0rks"
 
 # ===================================================================
 # HISTORY SETTINGS

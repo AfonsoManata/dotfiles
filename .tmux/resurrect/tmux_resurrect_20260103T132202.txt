@@ -1,0 +1,12 @@
+pane	grind	1	1	:*	1	:/Users/afonsomanata	:/Users/afonsomanata/Programing/Leetcode-Grind/Dp	1	zsh	:
+pane	ist	1	1	:*	1	:/Users/afonsomanata/IST-MYFILES/SO/PacmanIST/P2	:/Users/afonsomanata/IST-MYFILES/SO/PacmanIST/P2	1	zsh	:
+pane	personal	1	1	:*	1	:/Users/afonsomanata/Programing/PersonalProjects/JustAQuote/backend	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio	0	node	:npm run dev   
+pane	personal	1	1	:*	2	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio	1	zsh	44422	:
+pane	random	1	1	:*	1	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio	1	zsh	:
+pane	random	1	1	:*	2	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio/public/img	0	nvim	:nvim text.txt
+pane	random	1	1	:*	3	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio/components	0	nvim	:nvim experience.tsx
+window	grind	1	:zsh	1	:*	b15e,272x60,0,0,1	:
+window	ist	1	:zsh	1	:*	c83f,113x66,0,0,2	:
+window	personal	1	:zsh	1	:*	337e,229x66,0,0{114x66,0,0,3,114x66,115,0,8}	:
+window	random	1	:zsh	1	:*	c766,229x66,0,0{101x66,0,0[101x33,0,0,5,101x32,0,34,6],127x66,102,0,7}	:
+state	personal	ist

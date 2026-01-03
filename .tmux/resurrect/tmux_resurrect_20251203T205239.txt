@@ -1,0 +1,17 @@
+pane	grind	1	1	:*	1	MacBook-Pro-de-Manata.local	:/Users/afonsomanata	1	zsh	:
+pane	ist	1	1	:*	1	:/Users/afonsomanata/IST-MYFILES/SO/PacmanIST/SO-2526-Proj-codigo-base	:/Users/afonsomanata/IST-MYFILES/ASA	1	nvim	:/bin/bash ./test2.sh
+/bin/bash ./test2.sh
+nvim results.txt
+pane	ist	1	1	:*	2	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/IST-MYFILES/ASA	0	nvim	:nvim results.txt
+pane	personal	1	1	:*	1	:/Users/afonsomanata/Programing/PersonalProjects/JustAQuote/backend	:/Users/afonsomanata/Programing/PersonalProjects/JustAQuote/backend	0	zsh	:
+pane	personal	1	1	:*	2	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects	1	zsh	:
+pane	promptlyWork	1	1	:*	1	:/Users/afonsomanata/Programing/Promplty/infrastructure-live/stg/eu-central-1/eks/apps/infrastructure/crossplane-compositions/xcollect	:/Users/afonsomanata/Programing/Promplty/infrastructure-live/stg/eu-central-1/eks/apps/infrastructure/crossplane-compositions/xcollect	1	zsh	:
+pane	random	1	1	:*	1	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio	1	zsh	:
+pane	random	1	1	:*	2	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio/public/img	0	nvim	:nvim text.txt
+pane	random	1	1	:*	3	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio/components	0	nvim	:nvim experience.tsx
+window	grind	1	:zsh	1	:*	cafe,189x56,0,0,1	:
+window	ist	1	:nvim	1	:*	e483,211x54,0,0{105x54,0,0,2,105x54,106,0,9}	:
+window	personal	1	:zsh	1	:*	c9be,103x54,0,0{51x54,0,0,3,51x54,52,0,4}	:
+window	promptlyWork	1	:zsh	1	:*	bd62,211x54,0,0,5	:
+window	random	1	:zsh	1	:*	ce0f,103x54,0,0{38x54,0,0[38x27,0,0,6,38x26,0,28,7],64x54,39,0,8}	:
+state	ist	grind

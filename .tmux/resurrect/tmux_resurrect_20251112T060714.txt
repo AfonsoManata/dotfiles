@@ -1,5 +1,0 @@
-pane	2	1	1	:*	1	MacBook-Pro-de-Afonso-2.local	:/Users/afonsomanata/dotfiles/.config/alacritty	1	zsh	:
-pane	ist	1	1	:*	1	MacBook-Pro-de-Manata.local	:/Users/afonsomanata	1	zsh	:
-window	2	1	:zsh	1	:*	bd5e,211x54,0,0,1	:
-window	ist	1	:zsh	1	:*	bd61,211x54,0,0,4	:
-state	ist	

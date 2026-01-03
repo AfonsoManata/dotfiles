@@ -1,7 +1,0 @@
-pane	ist	1	1	:*	1	MacBook-Pro-de-Manata.local	:/Users/afonsomanata	1	zsh	:
-pane	personal	1	1	:*	1	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/Leetcode-Grind/Basics/SortingAlgo	1	nvim	:nvim merge.py
-pane	promptlyWork	1	1	:*	1	MacBook-Pro-de-Manata.local	:/Users/afonsomanata	1	zsh	:
-window	ist	1	:zsh	1	:*	bd61,211x54,0,0,4	:
-window	personal	1	:nvim	1	:*	bd63,211x54,0,0,6	:
-window	promptlyWork	1	:zsh	1	:*	bd62,211x54,0,0,5	:
-state	personal	

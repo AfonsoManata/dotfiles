@@ -1,0 +1,15 @@
+pane	grind	1	1	:*	1	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/Leetcode-Grind/Stack	1	zsh	:
+pane	ist	1	1	:*	1	Yazi: ~/IST-MYFILES/SO/SOLabs/lab_semaforos	:/Users/afonsomanata/IST-MYFILES/SO/SOLabs/lab_semaforos	1	yazi	:yazi --cwd-file=/var/folders/k8/dqck2g6j17nf85c75nbdf__00000gn/T/yazi-cwd.XXXXXX.eXtNFk6FDt
+pane	personal	1	1	:*	1	:/Users/afonsomanata/Programing/PersonalProjects/JustAQuote/backend	:/Users/afonsomanata/Programing/PersonalProjects/Ad-Blocker-HomeServer	0	zsh	:
+pane	personal	1	1	:*	2	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/UniversityGrades	1	zsh	:
+pane	promptlyWork	1	1	:*	1	:/Users/afonsomanata/Programing/Promplty/infrastructure-live/stg/eu-central-1/eks/apps/infrastructure/crossplane-compositions/xcollect	1	zsh	3842	:
+pane	promptlyWork	1	1	:*	2	:/Users/afonsomanata/Programing/Promplty/infrastructure-live/stg/eu-central-1/eks/apps/infrastructure/crossplane-compositions/xcollect	0	zsh	31962	:
+pane	random	1	1	:*	1	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio	1	zsh	:
+pane	random	1	1	:*	2	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio/public/img	0	nvim	:nvim text.txt
+pane	random	1	1	:*	3	MacBook-Pro-de-Manata.local	:/Users/afonsomanata/Programing/PersonalProjects/afonsomanata-websiteportfolio/components	0	nvim	:nvim experience.tsx
+window	grind	1	:zsh	1	:*	cb9e,229x66,0,0,1	:
+window	ist	1	:yazi	1	:*	cba6,229x66,0,0,9	:
+window	personal	1	:zsh	1	:*	5a14,229x66,0,0{114x66,0,0,3,114x66,115,0,11}	:
+window	promptlyWork	1	:zsh	1	:*	da14,229x66,0,0{114x66,0,0,5,114x66,115,0,10}	:
+window	random	1	:zsh	1	:*	c769,229x66,0,0{101x66,0,0[101x33,0,0,6,101x32,0,34,7],127x66,102,0,8}	:
+state	ist	promptlyWork
