@@ -1,9 +1,13 @@
-after-startup-command = ['exec-and-forget sketchybar']
+# Inicia os serviços APENAS UMA VEZ no startup
+after-startup-command = [
+    'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0XFF414550 style=round width=2.0',
+    'exec-and-forget sketchybar'
+]
 
-# Notify Sketchybar about workspace change
-exec-on-workspace-change = ['/bin/bash', '-c',
-  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
-  'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
+# Apenas notifica o sketchybar na mudança de workspace
+exec-on-workspace-change = [
+    '/bin/bash', '-c',
+    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
 ]
 
 # Start AeroSpace at login
@@ -97,15 +101,15 @@ preset = 'qwerty'
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikictrlobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 10
-inner.vertical =   10
-outer.left =       0
-outer.bottom =     0
-outer.right =      0
+inner.horizontal = 11
+inner.vertical =   11
+outer.left =       1
+outer.bottom =     1
+outer.right =      1
 outer.top = [
-    { monitor."LG FULL HD"= 25 },   # for external monitor
-    { monitor."24G1WG4"= 25 },   # for external monitor p
-	0
+    { monitor."LG FULL HD"= 26 },   # for external monitor
+    { monitor."24G1WG4"= 26 },   # for external monitor p
+	1
 ]
 
 # 'main' binding mode declaration
@@ -192,10 +196,9 @@ ctrl-shift-semicolon = 'mode service'
 ctrl-shift-enter = 'mode apps'
 
 ctrl-d = 'exec-and-forget open -a /Applications/Discord.app'
-ctrl-m = 'exec-and-forget open -a /Applications/Spotify.app'
 ctrl-b = 'exec-and-forget open -a /Applications/Brave Browser.app'
 ctrl-a = 'exec-and-forget open -a /Applications/Alacritty.app'
-ctrl-o = 'exec-and-forget /Applications/Alacritty.app/Contents/MacOS/alacritty -e nvim "/Users/afonsomanata/notes/note-$(date +%Y%m%d_%H%M).md"' 
+ctrl-o = 'exec-and-forget /Applications/Alacritty.app/Contents/MacOS/alacritty -e nvim "/Users/afonsomanata/notes/note-$(date +%Y%m%d_%H%M).md"'
 ctrl-n = 'exec-and-forget open -a /Applications/Notion.app'
 ctrl-p = 'exec-and-forget open -a /Applications/KeePassXC.app'
 
