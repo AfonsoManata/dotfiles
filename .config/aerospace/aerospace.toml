@@ -1,13 +1,9 @@
-# Inicia os serviços APENAS UMA VEZ no startup
-after-startup-command = [
-    'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0XFF414550 style=round width=2.0',
-    'exec-and-forget sketchybar'
-]
+after-startup-command = ['exec-and-forget sketchybar']
 
-# Apenas notifica o sketchybar na mudança de workspace
-exec-on-workspace-change = [
-    '/bin/bash', '-c',
-    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+# Notify Sketchybar about workspace change
+exec-on-workspace-change = ['/bin/bash', '-c',
+  'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE',
+  'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=5.0'
 ]
 
 # Start AeroSpace at login
@@ -101,15 +97,15 @@ preset = 'qwerty'
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikictrlobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 11
-inner.vertical =   11
-outer.left =       1
-outer.bottom =     1
-outer.right =      1
+inner.horizontal = 10
+inner.vertical =   10
+outer.left =       0
+outer.bottom =     0
+outer.right =      0
 outer.top = [
-    { monitor."LG FULL HD"= 26 },   # for external monitor
-    { monitor."24G1WG4"= 26 },   # for external monitor p
-	1
+    { monitor."LG FULL HD"= 25 },   # for external monitor
+    { monitor."24G1WG4"= 25 },   # for external monitor p
+	0
 ]
 
 # 'main' binding mode declaration
