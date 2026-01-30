@@ -63,6 +63,12 @@ export ZVM_VI_EDITOR="nvim"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+export ZVM_CURSOR_STYLE_ALWAYS=true
+export ZVM_INSERT_MODE_CURSOR=$ZVM_CURSOR_BLOCK
+export ZVM_NORMAL_MODE_CURSOR=$ZVM_CURSOR_BLOCK
+export ZVM_VISUAL_MODE_CURSOR=$ZVM_CURSOR_BLOCK
+export ZVM_OPPEND_MODE_CURSOR=$ZVM_CURSOR_BLOCK
+
 zvm_bindkey viins '^O' clear-screen
 zvm_bindkey vicmd '^O' clear-screen
 

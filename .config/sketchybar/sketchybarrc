@@ -13,7 +13,7 @@ default=(
 	padding_left=5
 	padding_right=5
 	icon.font="Hack Nerd Font:Regular:10.0"
-	label.font="SF Pro:Semibold:12.0"
+	label.font="SF Pro:Semibold:10.0"
 	icon.color=$WHITE
 	label.color=$WHITE
 	icon.padding_left=2
@@ -29,23 +29,23 @@ sketchybar --default "${default[@]}"
 ##### Left Items #####
 
 sketchybar --add item apple left \
-	--set apple icon= label.drawing=off icon.padding_right=0 \
-	icon.font="Hack Nerd Font:Regular:14.0" \
+	--set apple icon= label.drawing=off icon.padding_left=0 icon.padding_right=0 \
+	icon.font="Hack Nerd Font:Regular:12.0" \
 	icon.padding_left=0 \
-	icon.color=$PURPLE \
+	icon.color=$WHITE \
 	--subscribe front_app front_app_switched
 
 sketchybar --add event aerospace_workspace_change
 
 sketchybar --add item window_title left \
-	--set window_title icon= label.font="SF Pro:Semibold:14.0" \
+	--set window_title icon= label.font="SF Pro:Semibold:11.0" \
 	icon.padding_right=2 \
 	icon.padding_left=0 \
 	width=dynamic \
 	updates=on \
 	update_freq=1 \
 	script="$PLUGIN_DIR/aerospace_window_title.sh" \
-	label.color=$PURPLE \
+	label.color=$WHITE \
 	--subscribe window_title aerospace_workspace_change
 
 ##### Right Items #####
@@ -55,33 +55,23 @@ sketchybar \
 	--set clock \
 	update_freq=10 \
 	script="$PLUGIN_DIR/clock.sh" \
-	label.color=$BLUE \
+	label.color=$WHITE \
+	\
+	--add graph cpu_usage right 50 \
+	--set cpu_usage script="$PLUGIN_DIR/cpu_usage.sh" \
+	update_freq=5 \
+	label.color=$WHITE \
+	graph.color=$WHITE \
+	graph.fill_color=$WHITE \
+	graph.line_width=2 \
+	icon.drawing=off \
 	\
 	--add item battery right \
 	--set battery \
 	update_freq=120 \
 	script="$PLUGIN_DIR/battery.sh" \
 	padding_right=4 \
-	--subscribe battery system_woke power_source_change \
-	\
-	--add item disk right \
-	--set disk \
-	script="$PLUGIN_DIR/disk.sh" \
-	icon= \
-	update_freq=3 \
-	label.padding_left=0 \
-	icon.padding_right=8 \
-	label.color=$PURPLE \
-	icon.color=$PURPLE \
-	\
-	--add graph cpu_usage right 50 \
-	--set cpu_usage script="$PLUGIN_DIR/cpu_usage.sh" \
-	update_freq=5 \
-	label.color=$PURPLE \
-	graph.color=$PURPLE \
-	graph.fill_color=$PURPLE \
-	graph.line_width=2 \
-	icon.drawing=off
+	--subscribe battery system_woke power_source_change
 
 ##### Force all scripts to run the first time #####
 sketchybar --update
