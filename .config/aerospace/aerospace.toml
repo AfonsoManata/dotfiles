@@ -191,7 +191,6 @@ ctrl-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 ctrl-shift-semicolon = 'mode service'
 ctrl-shift-enter = 'mode apps'
 
-ctrl-d = 'exec-and-forget open -a /Applications/Discord.app'
 ctrl-b = 'exec-and-forget open -a /Applications/Brave Browser.app'
 ctrl-a = 'exec-and-forget open -a /Applications/Alacritty.app'
 ctrl-o = 'exec-and-forget /Applications/Alacritty.app/Contents/MacOS/alacritty -e nvim "/Users/afonsomanata/notes/note-$(date +%Y%m%d_%H%M).md"'
