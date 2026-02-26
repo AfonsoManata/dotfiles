@@ -47,42 +47,6 @@ automatically-unhide-macos-hidden-apps = false
 # check-further-callbacks = true
 # run = ['layout floating', 'move-node-to-workspace S']  # The callback itself
 
-[[on-window-detected]]
-if.app-name-regex-substring = 'Spotify'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'telegram'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'finder'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'safari'
-run = 'layout floating'
- 
-[[on-window-detected]]
-if.app-name-regex-substring = 'camera'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'elgato'
-run = 'layout floating'
-
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'mail'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'trello'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'quicktime'
-run = 'layout floating'
 
 # Possible values: (qwerty|dvorak)
 # See https://nikictrlobko.github.io/AeroSpace/guide#key-mapping
@@ -203,7 +167,4 @@ esc = ['reload-config', 'mode main']
 r = ['flatten-workspace-tree', 'mode main'] # reset layout
 f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
 backspace = ['close-all-windows-but-current', 'mode main']
-
-[mode.apps.binding]
-ctrl-w = ['exec-and-forget open -a /Applications/WezTerm.app', 'mode main']
 
