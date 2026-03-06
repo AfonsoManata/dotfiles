@@ -1,4 +1,3 @@
-
 [env]
 TERM = "xterm-256color"
 
@@ -9,7 +8,7 @@ padding.y = 5
 decorations = "Buttonless"
 
 opacity = 0.1
-blur = true 
+blur = true
 
 [font]
 normal.family = "MesloLGS Nerd Font Mono"
