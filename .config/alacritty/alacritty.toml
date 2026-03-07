@@ -11,14 +11,14 @@ opacity = 0.1
 blur = true
 
 [font]
-normal.family = "MesloLGS Nerd Font Mono"
+normal.family = "JetBrainsMono Nerd Font"
 
-size = 12
+size = 13
 
 
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/dracula.toml"
+    "~/.config/alacritty/themes/themes/coolnight.toml"
 ]
 
 
