@@ -21,4 +21,7 @@ import = [
     "~/.config/alacritty/themes/themes/coolnight.toml"
 ]
 
+[terminal.shell]
+program = "/bin/bash"
+args = ["-l"]
 
