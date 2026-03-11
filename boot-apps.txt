@@ -1,0 +1,18 @@
+GNU STOW -> dotfiles
+I3 or Aerospace -> Tiling Window Manager
+Scketchy Bar or I3 default
+Allacritty
+Spotify
+Discord
+Shortcat
+Chrome and Brave
+Alfred
+Google Drive -> Integrate with folders
+Notion
+ScreenShots
+Tailscale
+KeePassXC
+Docker
+Postman
+
+
