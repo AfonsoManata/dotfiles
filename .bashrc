@@ -10,6 +10,7 @@ alias comboio="sl"
 alias ls="eza --icons=always -a"
 alias python="python3"
 alias fireworks="npx firew0rks"
+alias rm="rm -i"
 
 # ===================================================================
 # HISTORY SETTINGS (Sintaxe Bash)
@@ -52,6 +53,19 @@ export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git
 show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
 export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
 export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
+
+_fzf_zoxide_cd_final() {
+	local dir
+	dir=$(zoxide query -l | fzf --height 40% --layout=reverse)
+	if [[ -n "$dir" ]]; then
+		cd "$dir"
+		# No Bash, não precisamos de zle, limpamos o ecrã e forçamos o prompt
+		clear
+		kill -WINCH $$
+	fi
+}
+
+bind -x '"\C-f": _fzf_zoxide_cd_final'
 
 # ===================================================================
 # NVM (Node Version Manager)
