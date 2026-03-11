@@ -1,0 +1,87 @@
+# ===================================================================
+# ALIASES
+# ===================================================================
+alias reload-bash="source ~/.bashrc"
+alias edit-bash="nvim ~/.bashrc"
+alias n="nvim"
+alias c="clear"
+alias f="fastfetch"
+alias comboio="sl"
+alias ls="eza --icons=always -a"
+alias python="python3"
+alias fireworks="npx firew0rks"
+
+# ===================================================================
+# HISTORY SETTINGS (Sintaxe Bash)
+# ===================================================================
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+export HISTFILE=~/.bash_history
+export HISTCONTROL=ignoreboth:erasedups
+shopt -s histappend
+
+# ===================================================================
+# PATH CONFIG
+# ===================================================================
+export PATH="$PATH:/Users/joseanmartinez/.spicetify"
+export PATH="$HOME/.rbenv/shims:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# ===================================================================
+# VI MODE (Nativo do Bash)
+# ===================================================================
+set -o vi
+export EDITOR="nvim"
+export VISUAL="nvim"
+
+# ===================================================================
+# FZF + FD + EZA + BAT + ZOXIDE
+# ===================================================================
+# Inicialização específica para BASH
+eval "$(zoxide init --cmd cd bash)"
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export FZF_DEFAULT_OPTS="--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
+
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+
+show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
+export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
+export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
+
+# ===================================================================
+# NVM (Node Version Manager)
+# ===================================================================
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# ===================================================================
+# YAZI FILE MANAGER
+# ===================================================================
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+# ===================================================================
+# TMUX AUTO-ATTACH
+# ===================================================================
+if [[ -z "$TMUX" ]] && [[ $- == *i* ]]; then
+	if tmux list-sessions &>/dev/null; then
+		tmux attach
+	else
+		tmux new-session
+	fi
+fi
+
+eval "$(starship init bash)"
+PS1="$PS1\[\e[38;2;68;255;177m\]"

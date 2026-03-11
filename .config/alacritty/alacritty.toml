@@ -7,8 +7,8 @@ padding.y = 5
 
 decorations = "Buttonless"
 
-opacity = 0.1
-blur = true
+opacity = 0.3
+blur = false
 
 [font]
 normal.family = "JetBrainsMono Nerd Font"

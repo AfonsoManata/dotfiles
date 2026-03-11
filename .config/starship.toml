@@ -1,0 +1,39 @@
+# Ordem: Pasta, Branch (master), Status (!1 ?3), Cursor
+format = """$directory$git_branch$git_status$character"""
+
+[directory]
+style = "bold #0FC5ED"
+truncation_length = 3
+truncation_symbol = "…/"
+format = "[$path]($style) "
+
+[git_branch]
+symbol = ""
+style = "bold #a277ff"
+# Mostra "master" (ou outra branch) em Magenta
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "bold #FFE073"
+
+untracked = "[?${count} ](bold #24EAF7)"
+
+conflicted = "=${count} "
+ahead = "⇡${count} "
+behind = "⇣${count} "
+diverged = "⇕⇡${ahead_count}⇣${behind_count} "
+up_to_date = ""
+staged = "+${count} "
+modified = "!${count} "
+renamed = "»${count} "
+deleted = "✘${count} "
+
+format = "([$all_status$ahead_behind]($style) )"
+
+[character]
+success_symbol = "[❯](bold #44FFB1)" 
+error_symbol = "[❯](bold #E52E2E)"
+
+# Manter o resto desativado
+[package]
+disabled = true
