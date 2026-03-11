@@ -1,3 +1,5 @@
+SSH Keys
+Git configuration
 GNU STOW -> dotfiles
 I3 or Aerospace -> Tiling Window Manager
 Scketchy Bar or I3 default
@@ -14,5 +16,6 @@ Tailscale
 KeePassXC
 Docker
 Postman
-
+Fonts for terminal
+Battery Optimization
 
