@@ -7,7 +7,7 @@ padding.y = 5
 
 decorations = "Buttonless"
 
-opacity = 0.1
+opacity = 0.3
 blur = true
 
 [font]
