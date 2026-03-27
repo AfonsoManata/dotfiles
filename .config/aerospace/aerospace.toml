@@ -66,11 +66,7 @@ inner.vertical =   10
 outer.left =       0
 outer.bottom =     0
 outer.right =      0
-outer.top = [
-    { monitor."LG FULL HD"= 25 },   # for external monitor
-    { monitor."24G1WG4"= 25 },   # for external monitor p
-	0
-]
+outer.top = 0
 
 # 'main' binding mode declaration
 # See: https://nikictrlobko.github.io/AeroSpace/guide#binding-modes
@@ -138,6 +134,9 @@ ctrl-w = 'workspace 5'
 ctrl-e = 'workspace 6'
 ctrl-i = 'workspace 7'
 
+
+# Press Alt + B to show/hide the bar
+ctrl-b = 'exec-and-forget sketchybar --bar hidden=toggle'
 
 # See: https://nikictrlobko.github.io/AeroSpace/commands#move-node-to-workspace
 ctrl-shift-1 = 'move-node-to-workspace 1 --focus-follows-window'
