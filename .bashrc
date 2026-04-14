@@ -1,15 +1,7 @@
 # ===================================================================
 # ALIASES
 # ===================================================================
-alias reload-bash="source ~/.bashrc"
-alias edit-bash="nvim ~/.bashrc"
-alias n="nvim"
-alias c="clear"
-alias f="fastfetch"
-alias comboio="sl"
 alias ls="eza --icons=always -a"
-alias python="python3"
-alias fireworks="npx firew0rks"
 alias rm="rm -i"
 
 # ===================================================================
