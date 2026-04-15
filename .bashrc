@@ -81,9 +81,9 @@ function y() {
 # ===================================================================
 # TMUX AUTO-ATTACH
 # ===================================================================
-if [[ -z "$TMUX" ]] && [[ $- == *i* ]] && [[ "$SHLVL" -eq 1 ]]; then
-	# Start tmux and name the session 'default' for Resurrect to work better
-	exec tmux new-session -A -s default
+# Auto-attach to tmux if not already inside
+if command -v tmux &>/dev/null && [ -z "$TMUX" ]; then
+	tmux attach-session -t default || tmux new-session -s default
 fi
 
 eval "$(fzf --bash)"
