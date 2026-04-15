@@ -16,8 +16,6 @@ shopt -s histappend
 # ===================================================================
 # PATH CONFIG
 # ===================================================================
-export PATH="$PATH:/Users/joseanmartinez/.spicetify"
-export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # ===================================================================
@@ -30,7 +28,6 @@ export VISUAL="nvim"
 # ===================================================================
 # FZF + FD + EZA + BAT + ZOXIDE
 # ===================================================================
-# Inicialização específica para BASH
 eval "$(zoxide init --cmd cd bash)"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
@@ -51,7 +48,6 @@ _fzf_zoxide_cd_final() {
 	dir=$(zoxide query -l | fzf --height 40% --layout=reverse)
 	if [[ -n "$dir" ]]; then
 		cd "$dir"
-		# No Bash, não precisamos de zle, limpamos o ecrã e forçamos o prompt
 		clear
 		kill -WINCH $$
 	fi
