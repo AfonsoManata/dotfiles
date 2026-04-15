@@ -18,4 +18,5 @@ Docker
 Postman
 Fonts for terminal
 Battery Optimization
+Tmux plugins clone
 
