@@ -7,7 +7,7 @@ Allacritty
 Spotify
 Discord
 Shortcat
-Chrome and Brave
+Brave -> and copy settings
 Alfred
 Google Drive -> Integrate with folders
 Notion
