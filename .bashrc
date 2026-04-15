@@ -82,6 +82,7 @@ if command -v tmux &>/dev/null && [ -z "$TMUX" ]; then
 	tmux attach-session -t default || tmux new-session -s default
 fi
 
+tmux source-file ~/.tmux/.tmux.conf
 eval "$(fzf --bash)"
 eval "$(starship init bash)"
 PS1="$PS1\[\e[38;2;68;255;177m\]"
