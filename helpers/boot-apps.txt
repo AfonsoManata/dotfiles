@@ -4,18 +4,12 @@ GNU STOW -> dotfiles
 KDE or Aerospace -> Tiling Window Manager with aerospace shortcuts
 Scketchy Bar or I3 default
 Allacritty
-Spotify
-Discord
 Shortcat
 Brave -> and copy settings
 Alfred
 Google Drive -> Integrate with folders
-Notion
 ScreenShots
-Tailscale
 KeePassXC
-Docker
-Postman
 Fonts for terminal
 Battery Optimization
 Tmux plugins clone
