@@ -7,7 +7,7 @@ Allacritty
 Shortcat
 Brave -> and copy settings
 Alfred
-Google Drive -> Integrate with folders
+Google Drive -> Integrate with folders use rclone in linux
 ScreenShots
 KeePassXC
 Fonts for terminal
