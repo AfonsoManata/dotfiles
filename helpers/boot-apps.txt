@@ -2,7 +2,6 @@ SSH Keys
 Git configuration
 GNU STOW -> dotfiles
 KDE or Aerospace -> Tiling Window Manager with aerospace shortcuts
-Scketchy Bar or I3 default
 Allacritty
 Shortcat
 Brave -> and copy settings
