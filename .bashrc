@@ -94,3 +94,4 @@ tmux source-file ~/.tmux/.tmux.conf
 eval "$(fzf --bash)"
 eval "$(starship init bash)"
 PS1="$PS1\[\e[38;2;68;255;177m\]"
+eval "$(zoxide init --cmd cd bash)"
