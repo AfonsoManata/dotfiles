@@ -13,4 +13,4 @@ Fonts for terminal
 Battery Optimization
 Tmux plugins clone
 Brave sound working -> Widevine installed + simlink to images done
-
+Some offline app to draw
