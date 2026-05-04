@@ -80,14 +80,8 @@ function y() {
 # Auto-attach to tmux if not already inside
 # Only run this if we are in an interactive shell and NOT already inside tmux
 if [[ $- == *i* ]] && [ -z "$TMUX" ] && command -v tmux &>/dev/null; then
-
-	# Create the trio in the background if they don't exist
-	tmux has-session -t work 2>/dev/null || tmux new-session -d -s work
-	tmux has-session -t project 2>/dev/null || tmux new-session -d -s project
-	tmux has-session -t random 2>/dev/null || tmux new-session -d -s random
-
-	# Attach to 'random' by default
-	exec tmux -2 attach-session -t random
+	tmux has-session -t focus 2>/dev/null || tmux new-session -d -s focus
+	exec tmux -2 attach-session -t focus
 fi
 
 tmux source-file ~/.tmux/.tmux.conf
