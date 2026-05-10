@@ -10,7 +10,7 @@ Google Drive -> Integrate with folders use rclone in linux
 ScreenShots
 KeePassXC
 Fonts for terminal
-Battery Optimization
+Battery Optimization, block battery at 80%
 Tmux plugins clone
 Brave sound working -> Widevine installed + simlink to images done
 Some offline app to draw
