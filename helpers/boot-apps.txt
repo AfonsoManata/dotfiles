@@ -1,6 +1,7 @@
 SSH Keys
 Git configuration
 GNU STOW -> dotfiles
+Nix Package Manager
 KDE or Aerospace -> Tiling Window Manager with aerospace shortcuts
 Allacritty
 Shortcat
