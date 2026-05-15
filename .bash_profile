@@ -4,3 +4,4 @@ if [ -f ~/.bashrc ]; then
 fi
 
 if [ -e /home/afonsomanata/.nix-profile/etc/profile.d/nix.sh ]; then . /home/afonsomanata/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+eval "$(/opt/homebrew/bin/brew shellenv)"
