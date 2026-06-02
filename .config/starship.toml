@@ -34,6 +34,10 @@ format = "([$all_status$ahead_behind]($style) )"
 success_symbol = "[❯](bold #44FFB1)" 
 error_symbol = "[❯](bold #E52E2E)"
 
-# Manter o resto desativado
-[package]
-disabled = true
+[nix_shell]
+disabled = false
+heuristic = true
+
+[python]
+disabled = false
+heuristic = true
