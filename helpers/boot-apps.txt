@@ -4,9 +4,9 @@ GNU STOW -> dotfiles
 Nix Package Manager
 KDE or Aerospace -> Tiling Window Manager with aerospace shortcuts
 Allacritty
-Shortcat
 Brave -> and copy settings
-Alfred
+Raycast
+Homerow
 Google Drive -> Integrate with folders use rclone in linux
 ScreenShots
 KeePassXC
