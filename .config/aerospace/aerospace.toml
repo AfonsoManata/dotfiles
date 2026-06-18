@@ -87,12 +87,12 @@ outer.top = 0
 
 # See: https://nikictrlobko.github.io/AeroSpace/commands#exec-and-forget
 # You can uncomment the following lines to open up terminal with ctrl + enter shortcut (like in i3)
-# ctrl-enter = '''exec-and-forget osascript -e '
-# tell application "Terminal"
-#     do script
-#     activate
-# end tell'ctrl
-# '''
+ctrl-enter = '''exec-and-forget osascript -e '
+tell application "Terminal"
+    do script
+    activate
+end tell'ctrl
+'''
 
 alt-shift-f = 'fullscreen'
 
@@ -122,21 +122,21 @@ alt-minus = 'resize smart -50'
 alt-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-alt-1 = 'workspace 1'
-alt-2 = 'workspace 2'
-alt-3 = 'workspace 3'
-alt-q = 'workspace 4'
-alt-w = 'workspace 5'
-alt-e = 'workspace 6'
+alt-q = 'workspace 1'
+alt-w = 'workspace 2'
+alt-e = 'workspace 3'
+alt-a = 'workspace 4'
+alt-s = 'workspace 5'
+alt-d = 'workspace 6'
 alt-i = 'workspace 7'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-alt-shift-1 = 'move-node-to-workspace 1 --focus-follows-window'
-alt-shift-2 = 'move-node-to-workspace 2 --focus-follows-window'
-alt-shift-3 = 'move-node-to-workspace 3 --focus-follows-window'
-alt-shift-q = 'move-node-to-workspace 4 --focus-follows-window'
-alt-shift-w = 'move-node-to-workspace 5 --focus-follows-window'
-alt-shift-e = 'move-node-to-workspace 6 --focus-follows-window'
+alt-shift-q = 'move-node-to-workspace 1 --focus-follows-window'
+alt-shift-w = 'move-node-to-workspace 2 --focus-follows-window'
+alt-shift-e = 'move-node-to-workspace 3 --focus-follows-window'
+alt-shift-a = 'move-node-to-workspace 4 --focus-follows-window'
+alt-shift-s = 'move-node-to-workspace 5 --focus-follows-window'
+alt-shift-d = 'move-node-to-workspace 6 --focus-follows-window'
 alt-shift-i = 'move-node-to-workspace 7 --focus-follows-window'
 
 alt-tab = 'workspace next --wrap-around'
@@ -146,7 +146,6 @@ alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 alt-shift-semicolon = 'mode service'
 alt-shift-enter = 'mode apps'
 
-alt-a = 'exec-and-forget open -a /Applications/Alacritty.app'
 alt-o = 'exec-and-forget /Applications/Alacritty.app/Contents/MacOS/alacritty -e nvim "/Users/afonsomanata/notes/note-$(date +%Y%m%d_%H%M).md"'
 alt-n = 'exec-and-forget open -a /Applications/Notion.app'
 alt-p = 'exec-and-forget open -a /Applications/KeePassXC.app'
