@@ -5,8 +5,8 @@ padding.y = 5
 decorations = "Buttonless"
 option_as_alt = "OnlyLeft"
 
-opacity = 0.7
-blur = true
+opacity = 0.3
+blur = false
 
 [font]
 normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }

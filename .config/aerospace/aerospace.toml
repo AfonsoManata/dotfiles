@@ -87,12 +87,12 @@ outer.top = 0
 
 # See: https://nikictrlobko.github.io/AeroSpace/commands#exec-and-forget
 # You can uncomment the following lines to open up terminal with ctrl + enter shortcut (like in i3)
-ctrl-enter = '''exec-and-forget osascript -e '
-tell application "Terminal"
-    do script
-    activate
-end tell'ctrl
-'''
+# ctrl-enter = '''exec-and-forget osascript -e '
+# tell application "Terminal"
+#     do script
+#     activate
+# end tell'ctrl
+# '''
 
 alt-shift-f = 'fullscreen'
 
