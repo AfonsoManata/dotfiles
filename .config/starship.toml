@@ -1,5 +1,6 @@
 # Ordem: Pasta, Branch (master), Status (!1 ?3), Cursor
 format = """$directory$git_branch$git_status$character"""
+ignore_timeout = true
 
 [directory]
 style = "bold #0FC5ED"
