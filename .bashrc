@@ -84,6 +84,7 @@ if [[ $- == *i* ]] && [ -z "$TMUX" ] && command -v tmux &>/dev/null; then
 	exec tmux -2 attach-session -t focus
 fi
 
+export PATH="$HOME/.opencode/bin:$PATH"
 tmux source-file ~/.tmux/.tmux.conf
 eval "$(fzf --bash)"
 eval "$(starship init bash)"

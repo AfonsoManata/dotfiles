@@ -1,0 +1,17 @@
+# Window Customization
+window-padding-x = 5
+window-padding-y = 5
+macos-titlebar-style = hidden
+macos-option-as-alt = left
+
+# Opacity and Blur
+background-opacity = 0.3
+background-blur = false
+
+# Font Configuration
+font-family = "JetBrainsMono Nerd Font"
+font-size = 11
+
+# Shell Configuration
+command = /bin/bash -l
+
