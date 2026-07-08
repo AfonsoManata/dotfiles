@@ -4,13 +4,11 @@
     "read": "allow",
     "glob": "allow",
     "grep": "allow",
-    "list": "allow",
     "webfetch": "allow",
     "websearch": "allow",
     "lsp": "allow",
     "skill": "allow",
     "task": "allow",
-    "todowrite": "allow",
     "question": "allow"
   }
 }
